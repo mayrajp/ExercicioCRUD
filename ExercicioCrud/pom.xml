@@ -5,7 +5,52 @@
 	<groupId>ExercicioCrud</groupId>
 	<artifactId>ExercicioCrud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<build>
+       <finalName>ola-vraptor</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+	
+	 <dependencies>
+ 
+    <dependency>
+        <groupId>br.com.caelum</groupId>
+        <artifactId>vraptor</artifactId>
+        <version>4.1.4</version>
+    </dependency>
+ 
+    <dependency>
+        <groupId>jstl</groupId>
+         <artifactId>jstl</artifactId>
+         <version>1.2</version>
+    </dependency>
+ 
+    <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
+        <scope>provided</scope>
+    </dependency>
+ 
+    <dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-web-api</artifactId>
+        <version>7.0</version>
+        <scope>provided</scope>
+    </dependency>
+ 
+    </dependencies>	
+	<!--  <build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
@@ -16,28 +61,7 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			
-			<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-core</artifactId>
-
-	</dependency>
-
-	<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
-	<dependency>
-		<groupId>javax</groupId>
-		<artifactId>javaee-api</artifactId>
-		<version>8.0</version>
-		<scope>provided</scope>
-	</dependency>
-
-	<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
-	<dependency>
-		<groupId>dom4j</groupId>
-		<artifactId>dom4j</artifactId>
-	</dependency>
 		</plugins>
-	</build>
-	
+	</build> -->
+   
 </project>
